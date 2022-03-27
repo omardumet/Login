@@ -67,7 +67,7 @@ async function loginUser(){
 
 //jquery to toggle password when clik icon
 
-    $('#eye').on('click', function(){
+    $('#togglePassword').on('click', function(){
         var passInput=$("#passwordHTML");
 
 

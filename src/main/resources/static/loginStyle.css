@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-text-size-adjust: none;
 }
 
 
@@ -23,33 +24,34 @@ body{
 
 #topdiv{
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 62px;
+    font-size: 54px;
     color: #ffffff;
-    font-weight: bolder;
+    font-weight: bold;
     height: 20vh;
-    font-family: fantasy;
+    font-family: "Gill Sans";
 }
 
 #middlediv{
-    background-color: rgba(85, 57, 57, 0);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     flex-flow: column;
     color: #ffffff;
-    padding: 70px 30px;
+    padding: 70px 100px;
     height: 60vh;
     margin-bottom: 0;
 
 }
 
 .inputs{
-    margin: 15px 0;
+    margin: 25px 0;
     height: 100px;
     border: 0;
-    border-bottom: 2px solid #0e0e0e;
-    font-size: 64px;
+    border-bottom: 2px solid #ffffff;
+    font-size: 48px;
     padding-left: 30px;
     color: #ffffff;
     background-color: rgba(95, 72, 22, 0);
@@ -77,45 +79,45 @@ input:focus{
 #eye {
     cursor: pointer;
     color: red;
-    background-color: rgba(22, 27, 53, 0);
-    margin: 0 80px;
+    background-color: rgba(89, 97, 136, 0);
+    margin: 0 20px;
     padding-left: 10px;
-    margin-top: -90px;
+    margin-top: -110px;
     margin-left: auto;
 
 }
 
 #togglePassword{
     color: #9c9c9c;
-    padding-right: 10px;
+    padding:20px;
     font-size: 44px;
 }
 
 @keyframes example {
-    0%   {border-color: rgb(255, 68, 0);}
-    12.5%  {border-color: rgb(244, 255, 0);}
-    25%  {border-color: rgb(14, 255, 0);}
-    37.5%  {border-color: rgb(0, 255, 168);}
-    50%  {border-color: rgb(0, 143, 255);}
-    65.5%  {border-color: rgb(39, 0, 255);}
-    78%  {border-color: rgb(255, 0, 219);}
-    100% {border-color: rgb(255, 0, 0);}
+    0%   {background-color: rgb(255, 68, 0);}
+    12.5%  {background-color: rgb(244, 255, 0);}
+    25%  {background-color: rgb(14, 255, 0);}
+    37.5%  {background-color: rgb(0, 255, 168);}
+    50%  {background-color: rgb(0, 143, 255);}
+    65.5%  {background-color: rgb(39, 0, 255);}
+    78%  {background-color: rgb(255, 0, 219);}
+    100% {background-color: rgb(255, 0, 0);}
 }
 
 #buttonHTML{
-    border: 2px solid rgba(255, 0, 0, 0.44);
-    width: 50%;
+    background-color: red;
+    padding: 2px;
+    width: 300px;
     border-radius: 20px;
     margin-top: 90px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
     animation-name: example;
     animation-duration: 60s;
     animation-iteration-count: infinite;
-
+    margin-left: auto;
+    margin-right: auto;
 
 }
+
 #buttonHTML:focus{
     border-color: #0040ff;
 }
@@ -128,7 +130,7 @@ input:focus{
 a{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     color: white;
     font-size: 42px;
 }
