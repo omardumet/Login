@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 @keyframes example2 {
     0%   {background-image: linear-gradient(#000000, #680000);}
     50%   {background-image: linear-gradient(#000000, #390000);}
@@ -9,41 +14,45 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
     background-color: black;
     animation-name: example2;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    height: 100vh;
 }
 
 #topdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0);
-    text-align: center;
-    padding: 70px;
-    font-size: 38px;
+    font-size: 62px;
     color: #ffffff;
     font-weight: bolder;
+    height: 20vh;
+    font-family: fantasy;
 }
 
 #middlediv{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(85, 57, 57, 0);
     display: flex;
     flex-flow: column;
     color: #ffffff;
-    padding-bottom: 30px;
-    height: 500px;
+    padding: 70px 30px;
+    height: 60vh;
+    margin-bottom: 0;
 
 }
 
 .inputs{
-    margin: 10px 80px;
-    height: 60px;
+    margin: 15px 0;
+    height: 100px;
     border: 0;
     border-bottom: 2px solid #0e0e0e;
-    font-size: 24px;
-    padding-left: 10px;
+    font-size: 64px;
+    padding-left: 30px;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(95, 72, 22, 0);
 }
 
 @keyframes example3 {
@@ -68,16 +77,18 @@ input:focus{
 #eye {
     cursor: pointer;
     color: red;
-    background-color: rgba(153, 172, 231, 0);
+    background-color: rgba(22, 27, 53, 0);
     margin: 0 80px;
     padding-left: 10px;
-    margin-top: -50px;
+    margin-top: -90px;
     margin-left: auto;
+
 }
 
 #togglePassword{
     color: #9c9c9c;
     padding-right: 10px;
+    font-size: 44px;
 }
 
 @keyframes example {
@@ -95,13 +106,14 @@ input:focus{
     border: 2px solid rgba(255, 0, 0, 0.44);
     width: 50%;
     border-radius: 20px;
-    margin-top: 60px;
+    margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
     animation-name: example;
     animation-duration: 60s;
     animation-iteration-count: infinite;
+
 
 }
 #buttonHTML:focus{
@@ -116,22 +128,23 @@ input:focus{
 a{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     color: white;
+    font-size: 42px;
 }
 
 #bottomdiv{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(26, 43, 64, 0);
     padding: 50px;
     text-align: center;
-    margin: 0;
-    height: 75px;
+    height: 20vh;
+    margin-top: 0;
     color: #000000;
 }
 
 #generatedPassword{
     background-color: rgba(0, 64, 255, 0);
-    color: #a30000;
+    color: #ffffff;
     text-align: center;
     margin-top: 100px;
 }
@@ -149,17 +162,39 @@ a{
     #topdiv{
         background-color: rgba(127, 255, 212, 0);
         color: #ffffff;
+        font-size: 42px;
     }
     #middlediv{
         width: 30%;
         margin-left: auto;
         margin-right: auto;
-        padding: 60px 0 30px 0;
+        padding: 60px 30px 30px 30px;
         box-shadow: #ffffff 4px 6px 20px;
         background-color: black;
-
     }
     .inputs{
+        font-size: 18px;
+    }
+
+    #eye {
+        background-color: rgba(24, 34, 81, 0);
+        margin: 0 20px;
+        padding-left: 10px;
+        margin-top: -50px;
+        margin-left: auto;
+    }
+
+    #togglePassword{
+        color: #9c9c9c;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+
+    a{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        color: white;
         font-size: 18px;
     }
 

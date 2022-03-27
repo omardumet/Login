@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 100vh;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -19,33 +20,37 @@ input[type="date"]::-webkit-datetime-edit-fields-wrapper
 
 
 #topdiv{
-    background-color: #000000;
-    text-align: center;
-    padding: 100px;
-    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 62px;
     color: #ffffff;
-    font-weight: bolder;
+    height: 10vh;
+    font-family: fantasy;
 
 }
 
 #middlediv{
-    background-color: #000000;
+    background-color: rgba(32, 55, 31, 0);
     display: flex;
     flex-flow: column;
     color: #ffffff;
-    padding-bottom: 30px;
+    padding: 1vh 1vh;
+    height: 80vh;
+    margin-bottom: 0;
 
 }
 
 .inputs{
-    margin: 10px 80px;
-    height: 60px;
+    margin: 15px 0;
+    height: 20vh;
     border: 0;
     border-bottom: 2px solid #0e0e0e;
-    font-size: 24px;
-    padding-left: 10px;
+    font-size: 64px;
+    padding-left: 1vh;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(150, 117, 46, 0);
 }
 input:focus{
     outline: 0;
@@ -55,27 +60,34 @@ input:focus{
 
 #eye {
     cursor: pointer;
-    background-color: rgba(153, 172, 231, 0);
-    margin: 0 80px;
-    padding-left: 10px;
-    margin-top: -50px;
+    color: red;
+    background-color: rgb(55, 72, 158);
+    margin: 0;
     margin-left: auto;
-    margin-bottom: 25px;
+    width: 10%;
+    text-align: center;
+    margin-top: -80px;
+    margin-bottom:2vh;
 }
 
 #togglePassword{
     color: #9c9c9c;
-    padding-right: 10px;
+    padding-right: 0;
+    font-size: 44px;
+
 }
 
 #buttonHTML{
     border: 2px solid rgba(255, 0, 0, 0.44);
-    width: 40%;
+    width: 50%;
     border-radius: 20px;
-    margin-top: 60px;
+    margin-top: 4vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding-left: 0;
+    animation-name: example;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 
 }
 #buttonHTML:focus{
@@ -88,40 +100,69 @@ input:focus{
 a{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 2vh;
     color: white;
+    font-size: 48px;
 }
 
 #bottomdiv{
-    background-color: #000000;
+    background-color: rgba(42, 75, 115, 0);
     padding: 50px;
     text-align: center;
-    margin: 0;
-    height: 30px;
+    height: 10vh;
+    margin-top: 0;
     color: #000000;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) {
 
     #topdiv{
         background-color: rgba(127, 255, 212, 0);
-        color: black;
+        color: #ffffff;
         padding: 50px;
         font-weight: bolder;
+        font-size: 38px;
+        height: 20vh;
 
     }
     #middlediv{
         width: 40%;
         margin-left: auto;
         margin-right: auto;
-        padding: 60px 0;
-    }
-    .inputs{
-        font-size: 18px;
+        padding: 60px 30px 30px 30px;
+        box-shadow: #ffffff 4px 6px 20px;
+        background-color: black;
+        height:70vh ;
     }
 
+    .inputs{
+        font-size: 18px;
+        background-color: #0040ff;
+        margin: 0 0 1vh 0;
+
+    }
+    #eye {
+        background-color: rgba(24, 34, 81, 0);
+        padding-left: 10px;
+        margin-top: -40px;
+        margin-left: auto;
+    }
+    #togglePassword{
+        color: #9c9c9c;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+
+    a{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+        color: white;
+        font-size: 18px;
+    }
     #bottomdiv{
         background-color: rgba(127, 255, 212, 0);
         color: black;
+        height: 10vh;
     }
 
 
@@ -132,16 +173,20 @@ a{
 
     #topdiv{
         background-color: rgba(127, 255, 212, 0);
-        color: black;
+        color: #ffffff;
         padding: 50px;
         font-weight: bolder;
+        font-size: 32px;
 
     }
     #middlediv{
-        width: 35%;
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
-        padding: 60px 0;
+        padding: 60px 30px 30px 30px;
+        box-shadow: #ffffff 4px 6px 20px;
+        background-color: black;
+        height:70vh ;
     }
     .inputs{
         font-size: 18px;
