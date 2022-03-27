@@ -2,6 +2,22 @@ body{
     margin: 0;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    margin-right: 4px;
+    opacity: 0.6;
+    filter: invert(1);
+
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper
+{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+
 #topdiv{
     background-color: #000000;
     text-align: center;

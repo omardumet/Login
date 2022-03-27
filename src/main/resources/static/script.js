@@ -32,7 +32,7 @@ async function registerUser(){
         //const content = await rawResponse.json();
        // console.log(content);
     alert("user registered!")
-    window.location='login.html';
+    window.location='index.html';
 }
 
 
