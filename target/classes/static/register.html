@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="stylesheet" href="regisStyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="topdiv">
+    Create Account.
+</div>
+
+<div>
+    <div id="middlediv">
+        <input class="inputs" id="fnameHTML" placeholder="First name"></input>
+        <input class="inputs" id="lnameHTML" placeholder="Last name"></input>
+        <input class="inputs" id="birthdateHTML" placeholder="Birthdate"></input>
+        <input class="inputs" id="emailHTML" placeholder="Email"></input>
+        <input type="password" class="inputs" id="passwordHTML" placeholder="Enter password"></input>
+        <div id="eye" type="checkbox"><i  class="far fa-eye" id="togglePassword"></i></div>
+        <input type="password" class="inputs" id="passwordHTML2" placeholder="Re-enter password"></input>
+        <button class="inputs" onclick="registerUser()" id="buttonHTML">Register</button>
+        <a href="login.html">Already have an account? Login here.</a>
+    </div>
+</div>
+
+<div id="bottomdiv">
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
